@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+:root {
+  --font-pt-serif: 'PT Serif', serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-monserrat: 'Montserrat', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.role {
+  font-family: var(--font-pt-serif);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0;
+  margin-left: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+.person img {
+  width: 138.72px;
+  height: 209px;
+}
+.person p {
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.member {
+  display: flex;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+}
+.content {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  padding: 80px 0px 20px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.title {
+  font-family: var(--font-pt-serif);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  text-align: left;
+  color: black;
+}
+.about {
+  margin-top: 30px;
+}
+
+.about h2 {
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+}
+.about p {
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+footer {
+  text-align: center;
+  color: #a9a9a9;
+  font-family: var(--font-monserrat);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  padding-top: 20px;
+}
+footer span {
+  font-family: var(--font-monserrat);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .role {
+    font-size: 12px;
+  }
+
+  .person img {
+    width: 238px;
+    height: 341px;
+  }
+  .person p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .team {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    width: 75%;
+    height: 100vh;
+    padding: 50px 0px 20px 0px;
+  }
+}
